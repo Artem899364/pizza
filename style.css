@@ -1,0 +1,245 @@
+/* Основні стилі */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+/* Шапка */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d32f2f;
+    padding: 15px 50px;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #ffccbc;
+}
+
+/* Головний розділ */
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #ffe0b2;
+}
+
+.info-div {
+    max-width: 500px;
+}
+
+.info h1 {
+    font-size: 36px;
+    color: #bf360c;
+}
+
+.info p {
+    font-size: 18px;
+}
+
+.info-butt {
+    margin-top: 20px;
+}
+
+.call-butt, .menu-butt {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #d32f2f;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.call-butt:hover, .menu-butt:hover {
+    background-color: #b71c1c;
+}
+
+.info-img {
+    width: 400px;
+    margin-left: 30px;
+}
+
+/* Меню */
+.menu {
+    padding: 50px;
+    text-align: center;
+}
+
+.menu h2 {
+    font-size: 32px;
+    color: #d32f2f;
+}
+
+.menu-div {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.menu-img {
+    width: 150px;
+    margin-right: 20px;
+}
+
+.menu-info {
+    text-align: left;
+}
+
+.menu-text {
+    font-size: 16px;
+    color: #555;
+}
+
+.sallary {
+    font-size: 20px;
+    font-weight: bold;
+    color: #d32f2f;
+}
+
+.order {
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 15px;
+    background-color: #d32f2f;
+    color: white;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.order:hover {
+    background-color: #b71c1c;
+}
+
+/* Акції */
+.sale {
+    text-align: center;
+    padding: 50px;
+    background-color: #ffccbc;
+}
+
+.sale h2 {
+    font-size: 32px;
+    color: #d32f2f;
+}
+
+.sale-div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sale-img {
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Про нас */
+.about {
+    padding: 50px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 32px;
+    color: #d32f2f;
+}
+
+.about-div {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #555;
+}
+
+/* Підвал */
+footer {
+    background-color: #d32f2f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.footer-info h4 {
+    margin-bottom: 10px;
+}
+
+.footer-info p {
+    margin: 5px 0;
+}
+
+.footer-img {
+    width: 30px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.logo-img {
+    width: 100px;
+    margin-top: 10px;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info-img {
+        width: 80%;
+        margin: 20px 0;
+    }
+
+    .menu-div {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu-img {
+        margin: 0 auto 10px;
+    }
+
+    .sale-div {
+        flex-wrap: wrap;
+    }
+
+    .sale-img {
+        width: 45%;
+    }
+}
